@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Lista de património de uma empresa</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Patrimónios de empresa</h2>
+        </div>
+        
+    </header>
+    <div class="setor">
+        <h3>Adicione o setor da empresa</h3>
+        <div class="form-wrapper">
+            <input type="text" id="novoSetor" placeholder="Nome do Setor">      
+            <span onclick="newSetor()" class="addBtn">Adicionar Setor</span>
+        </div>
+        <span id="sucess-message"></span>
+    </div>
+    <div class="patrimonios" id="pat">
+    <!-- Opções para adicionar um novo item -->
+    <h3>Adicionei itens do património</h3>
+    <section class="newItem">
+        <input type="text" id="newPatrimonio" placeholder="Nome do património">
+        <input type="text" id="newQuantity" placeholder="Quantidade">
+        <input type="text" id="newPrice" placeholder="Valor">
+        <input type="text" id="newFabricante" placeholder="Fabricante">
+        <input type="text" id="newModelo" placeholder="Modelo">
+        <!-- <input type="text" id="newSetor" placeholder="Setor"> -->
+        <select id="newSetor">
+            <option selected="true" disabled="disabled">Escolher a opção</option>
+        </select>
+            
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+        <section class="items">
+            <table id="myTable">
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Fabricante</th>
+                    <th>Modelo</th>
+                    <th>Setor</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+    </section>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

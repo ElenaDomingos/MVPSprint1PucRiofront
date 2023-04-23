@@ -1,6 +1,3 @@
-# MVP Sprint1 PucRio front-end
-MVP Desenvolvimento Full-stack básico PUC Rio parte front-end
-
 # Meu Front
 
 Este pequeno projeto foi realizado para o Sprint da Disciplina **Desenvolvimento Full Stack Básico**
